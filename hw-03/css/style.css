@@ -1,5 +1,29 @@
+nav {
+  margin-top: 80px;
+}
+
+section {
+  margin: -51px 0px 0px 100px;
+}
+
+article {
+  display: inline-block;
+  width: 420px;
+  height: 485px;
+  margin-left: 52px;
+  margin-top: 135px;
+  overflow: hidden;
+}
+
 .menu-list {
   list-style: none;
+  margin: 0px 0px 0px 215px;
+  padding: 0px;
+}
+
+li {
+  display: inline-block;
+  padding-left: 100px;
 }
 
 .menu-list a {
@@ -11,8 +35,8 @@
   text-transform: uppercase;
 }
 
-.main-list {
-  list-style: none;
+.img {
+  width: 100%;
 }
 
 .menu-name {
@@ -22,6 +46,7 @@
   color: #b4ad9e;
   text-transform: uppercase;
   font-weight: 300;
+  margin-top: 29px;
 }
 
 .img-name {
@@ -30,6 +55,7 @@
   line-height: 36px;
   color: #626262;
   font-weight: normal;
+  margin: 19px 0px 28px 0px;
 }
 
 .text {
@@ -48,4 +74,6 @@
   font-family: "Playfair Display", serif;
   color: #626262;
   border-width: 1px;
+  display: block;
+  margin: 46px 0px 72px 410px;
 }
