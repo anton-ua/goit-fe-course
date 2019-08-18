@@ -1,0 +1,51 @@
+.menu-list {
+  list-style: none;
+}
+
+.menu-list a {
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+  text-transform: uppercase;
+}
+
+.main-list {
+  list-style: none;
+}
+
+.menu-name {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b4ad9e;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.img-name {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #626262;
+  font-weight: normal;
+}
+
+.text {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #626262;
+}
+
+.button-load-more {
+  padding: 20px 30px;
+  background: #fff;
+  border-color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  border-width: 1px;
+}
