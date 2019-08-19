@@ -1,23 +1,28 @@
 nav {
-  margin-top: 80px;
+  margin-top: 75px;
 }
 
-section {
-  margin: -51px 0px 0px 100px;
+.wrapper {
+  width: 956px;
+  margin: auto;
 }
 
 article {
   display: inline-block;
   width: 420px;
   height: 485px;
-  margin-left: 52px;
-  margin-top: 135px;
+  margin: 135px 28px 0px;
   overflow: hidden;
+  font-family: "Playfair Display", serif;
+}
+
+section {
+  margin-top: -35px;
 }
 
 .menu-list {
   list-style: none;
-  margin: 0px 0px 0px 215px;
+  margin: 0px 0px 0px 88px;
   padding: 0px;
 }
 
@@ -35,10 +40,6 @@ li {
   text-transform: uppercase;
 }
 
-.img {
-  width: 100%;
-}
-
 .menu-name {
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
@@ -50,7 +51,6 @@ li {
 }
 
 .img-name {
-  font-family: "Playfair Display", serif;
   font-size: 30px;
   line-height: 36px;
   color: #626262;
@@ -59,21 +59,19 @@ li {
 }
 
 .text {
-  font-family: "Playfair Display", serif;
   font-size: 14px;
   line-height: 24px;
   color: #626262;
 }
 
 .button-load-more {
-  padding: 20px 30px;
+  padding: 18px 33px;
   background: #fff;
   border-color: #000;
   font-size: 20px;
   line-height: 24px;
-  font-family: "Playfair Display", serif;
   color: #626262;
   border-width: 1px;
   display: block;
-  margin: 46px 0px 72px 410px;
+  margin: 46px 0px 72px 388px;
 }
