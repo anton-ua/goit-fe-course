@@ -1,34 +1,29 @@
-nav {
-  margin-top: 75px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-  width: 956px;
-  margin: auto;
+  width: 900px;
+  margin: 0 auto;
 }
 
-article {
-  display: inline-block;
-  width: 420px;
-  height: 485px;
-  margin: 135px 28px 0px;
-  overflow: hidden;
-  font-family: "Playfair Display", serif;
-}
-
-section {
-  margin-top: -35px;
+header {
+  padding: 75px 0px 100px;
 }
 
 .menu-list {
+  font-size: 0px;
   list-style: none;
-  margin: 0px 0px 0px 88px;
-  padding: 0px;
+  text-align: center;
 }
 
-li {
+.menu-list li {
   display: inline-block;
-  padding-left: 100px;
+}
+
+.menu-list li:not(:last-child) {
+  margin-right: 100px;
 }
 
 .menu-list a {
@@ -40,14 +35,36 @@ li {
   text-transform: uppercase;
 }
 
+section {
+  font-size: 0;
+}
+
+.paper {
+  display: inline-block;
+  width: 420px;
+  margin-right: 60px;
+  margin-bottom: 130px;
+  overflow: hidden;
+  font-family: "Playfair Display", serif;
+}
+
+.paper:nth-child(even) {
+  margin-right: 0;
+}
+
+.paper:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .menu-name {
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
+  font-weight: 300;
   line-height: 17px;
   color: #b4ad9e;
   text-transform: uppercase;
-  font-weight: 300;
-  margin-top: 29px;
+  margin-top: 30px;
+  margin-bottom: 26px;
 }
 
 .img-name {
@@ -55,7 +72,7 @@ li {
   line-height: 36px;
   color: #626262;
   font-weight: normal;
-  margin: 19px 0px 28px 0px;
+  margin-bottom: 36px;
 }
 
 .text {
@@ -65,13 +82,13 @@ li {
 }
 
 .button-load-more {
-  padding: 18px 33px;
+  display: block;
+  padding: 20px 34px;
   background: #fff;
+  border-width: 1px;
   border-color: #000;
   font-size: 20px;
   line-height: 24px;
   color: #626262;
-  border-width: 1px;
-  display: block;
-  margin: 46px 0px 72px 388px;
+  margin: 55px auto 70px;
 }
