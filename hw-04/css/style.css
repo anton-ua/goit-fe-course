@@ -56,7 +56,27 @@ ul:first-child {
   float: right;
 }
 
-.product {
+.name-section {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  color: #555252;
+  text-align: center;
+}
+
+.name-section::after {
+  display: block;
+  content: "";
+  width: 164px;
+  height: 7px;
+  background-color: #4ec6ab;
+  margin: 28px auto 80px;
+}
+
+.product,
+.news {
   width: 255px;
   float: left;
   margin-right: 30px;
@@ -65,6 +85,10 @@ ul:first-child {
 
 .product:nth-of-type(4n) {
   margin-right: 0;
+}
+
+.product:nth-last-of-type(-n+4) {
+  margin-bottom: 100px;
 }
 
 .product-img {
@@ -94,4 +118,45 @@ ul:first-child {
   width: 54px;
   background-color: #8c8c8c;
   text-align: center;
+}
+
+.product:hover > .product-name {
+  background-color: #1abc9c;
+}
+
+.product:hover > .product-price {
+  background-color: #7fd9c7;
+}
+
+.news {
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+.news:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.news-name,
+.news-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #555252;
+}
+
+.news-text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+}
+
+.news-name::after {
+  display: block;
+  content: "";
+  width: 136px;
+  height: 3px;
+  background-color: #4ec6ab;
+  margin: 11px 0 24px;
 }
