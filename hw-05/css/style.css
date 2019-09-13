@@ -250,7 +250,7 @@ main {
 .icons,
 .add-to-cart {
   float: left;
-  box-sizing: border-box;
+  box-sizing: border-box;  
   border: 1px solid #ffffff;
   width: 50px;
   height: 50px;
@@ -262,17 +262,17 @@ main {
   line-height: 63px;
 }
 
+.icons:last-of-type {
+  margin-right: 0;
+}
+
 .icons:hover {
-  border: none;
   background-color: #1abc9c;
+  border: 1px solid #1abc9c;
 }
 
 .add-to-cart:hover {
   background-color: #323232;
-}
-
-.icons:last-of-type {
-  margin-right: 0;
 }
 
 .add-to-cart {
