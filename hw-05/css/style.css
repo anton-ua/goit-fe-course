@@ -145,11 +145,11 @@ main {
 }
 
 .butt-prev::after {
-  content: url("/img/icon-prev.png");
+  content: url("img/icon-prev.png");
 }
 
 .butt-next::after {
-  content: url("/img/icon-next.png");
+  content: url("img/icon-next.png");
 }
 
 .name-section {
@@ -294,21 +294,21 @@ main {
 }
 
 .icon-love::after {
-  content: url("/img/icon-1.png");
+  content: url("img/icon-1.png");
 }
 
 .icon-arrows::after {
-  content: url("/img/icon-2.png");
+  content: url("img/icon-2.png");
 }
 
 .icon-time::after {
-  content: url("/img/icon-3.png");
+  content: url("img/icon-3.png");
 }
 
 .add-to-cart::before {
   float: left;
   padding-left: 20px;
-  content: url("/img/icon-4.png") " ";
+  content: url("img/icon-4.png") " ";
 }
 
 footer {
