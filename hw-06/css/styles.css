@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 86px;
+  padding-bottom: 100px;
+}
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.logo-link,
+.menu-link {
+  text-decoration: none;
+  color: #95e1d3;
+}
+
+.menu {
+  display: flex;
+  min-width: 490px;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+}
+
+.undercover {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 50px;
+  background-color: #f38181;
+  display: none;
+}
+
+.menu-link:hover {
+  color: #f38181;
+}
+
+.menu li:hover .undercover {
+  display: block;
+}
+
+/* SERVICES */
+.our-servises {
+  margin-bottom: 88px;
+}
+
+.description-section {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.name-section,
+.name-team {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.name-section {
+  margin-bottom: 62px;
+}
+
+.name-section::after,
+.name-team::after {
+  content: "";
+  display: table;
+  margin: 44px auto 0px;
+  height: 3px;
+  width: 60px;
+  background-color: #f38181;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service {
+  width: 392px;
+  padding-left: 92px;
+  box-sizing: border-box;
+  background-position: top left 30px;
+  background-repeat: no-repeat;
+  min-height: 160px;
+  margin-bottom: 15px;
+}
+
+.service:nth-of-type(1) {
+  background-image: url(../img/section/ALARM.png);
+}
+
+.service:nth-of-type(2) {
+  background-image: url(../img/section/LINEGRAPH.png);
+}
+
+.service:nth-of-type(3) {
+  background-image: url(../img/section/COMPUTER.png);
+}
+
+.service:nth-of-type(4) {
+  background-image: url(../img/section/BOOK.png);
+}
+
+.service:nth-of-type(5) {
+  background-image: url(../img/section/HOME.png);
+}
+
+.service:nth-of-type(6) {
+  background-image: url(../img/section/IMAGE.png);
+}
+
+.name-service,
+.team-member-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.text-article,
+.team-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+/* TEAM */
+.team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-member {
+  position: relative;
+  width: 380px;
+}
+
+.name-team {
+  margin-bottom: 30px;
+}
+
+.team-text {
+  margin: 0 auto;
+  margin-bottom: 90px;
+  width: 950px;
+  text-align: center;
+}
+
+.team-member-name {
+  text-align: center;
+  color: #333333;
+  padding-top: 30px;
+}
+
+.team-member-position {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 24px;
+  color: #999999;
+}
+
+.background-of-img {
+  background-color: #95e1d3;
+  top: -100%;
+  left: 0;
+  width: 380px;
+  height: 470px;
+}
+
+.team-member-img {
+  position: absolute;
+}
+
+.team-member:hover .team-member-img {
+  top: -10px;
+  left: -10px;
+}
+
+.collection-icons {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background: linear-gradient(
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9)
+  );
+  width: 380px;
+  height: 470px;
+  display: none;
+}
+
+.team-member:hover .collection-icons {
+  display: block;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 380px;
+  height: 470px;
+}
+
+.icon-button  {
+  border: none;
+  margin-right: 1px;
+  width: 58px;
+  height: 58px;
+  background-color: #fce38a;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background-color: #95e1d3;
+}
+
+.icon-button-facebook {
+  background-image: url(../img/socials/facebook.png);
+}
+
+.icon-button-twitter {
+  background-image: url(../img/socials/twitter.png);
+}
+
+.icon-button-pinterest {
+  background-image: url(../img/socials/pinterest.png);
+}
+
+.icon-button-instagram {
+  background-image: url(../img/socials/instagram.png);
+}
+
+
