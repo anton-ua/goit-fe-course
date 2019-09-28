@@ -211,19 +211,47 @@
   height: 470px;
 }
 
+@keyframes animation-team-background {
+  0% {
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  100% {
+    top: -10px;
+    left: -10px;
+    opacity: 1;
+  }
+}
+
+@keyframes animation-team-img {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: -10px;
+    left: -10px;
+  }
+}
+
 .team-member-img {
   position: absolute;
+  top: 0;
+  left: 0;
+  
 }
 
 .team-member:hover .team-member-img {
+  animation: animation-team-img 0.2s;
   top: -10px;
   left: -10px;
 }
 
 .collection-icons {
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: 0;
+  left: 0;
   background: linear-gradient(
     rgba(243, 129, 129, 0.9),
     rgba(252, 227, 138, 0.9)
@@ -231,10 +259,13 @@
   width: 380px;
   height: 470px;
   display: none;
+  animation: animation-team-background 0.2s;
 }
 
 .team-member:hover .collection-icons {
   display: block;
+  top: -10px;
+  left: -10px;
 }
 
 .icons-list {
