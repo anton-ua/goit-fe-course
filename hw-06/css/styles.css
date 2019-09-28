@@ -40,27 +40,29 @@
   list-style: none;
 }
 
-.menu li {
+.menu-item {
   position: relative;
 }
 
-.undercover {
+.menu-item::after {
   position: absolute;
+  content: "";
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   height: 3px;
   width: 50px;
   background-color: #f38181;
-  display: none;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .menu-link:hover {
   color: #f38181;
 }
 
-.menu li:hover .undercover {
-  display: block;
+.menu-item:hover::after {
+  opacity: 1;
 }
 
 /* SERVICES */
@@ -69,11 +71,14 @@
 }
 
 .description-section {
+  display: block;
   font-family: "Kaushan Script", cursive;
   font-size: 24px;
+  font-weight: 400;
   color: #333333;
   text-align: center;
   padding-bottom: 20px;
+  text-transform: none;
 }
 
 .name-section,
@@ -88,6 +93,7 @@
 
 .name-section {
   margin-bottom: 62px;
+  /* white-space: pre-line;d */
 }
 
 .name-section::after,
@@ -233,16 +239,19 @@
 
 .icons-list {
   display: flex;
+  width: 380px;
+  height: 470px;
   justify-content: center;
   align-items: center;
   list-style: none;
-  width: 380px;
-  height: 470px;
 }
 
-.icon-button  {
-  border: none;
+.icon {
   margin-right: 1px;
+}
+
+.icon-button {
+  display: flex;
   width: 58px;
   height: 58px;
   background-color: #fce38a;
@@ -277,7 +286,6 @@
 }
 
 /* FOOTER */
-
 
 .foot {
   border-top: 1px solid #e5e5e5;
@@ -330,3 +338,6 @@
   cursor: pointer;
 }
 
+.subscribe-form {
+  font-size: 0;
+}
