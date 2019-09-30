@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 130px;
+  padding-bottom: 55px;
+}
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #fed136;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  min-width: 480px;
+  justify-content: space-between;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #222222;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.menu-item:hover .menu-link {
+  color: #fed136;
+}
+
+/* MAIN */
+/* SERVICES */
+
+.services {
+  padding-bottom: 120px;
+}
+
+.name-section {
+  text-transform: uppercase;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 76px;
+}
+
+.description-name-section {
+  display: block;
+  text-transform: none;
+  color: #777777;
+  font-family: "PT Serif", serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+/* ARTICLE */
+
+.contain-services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  max-width: 290px;
+  text-align: center;
+}
+
+.service::before {
+  content: "";
+  display: table;
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  border: 3px solid #fed136;
+  border-radius: 72px;
+  margin: 0 auto 22px;
+  background-position: center;
+}
+
+.commerce::before {
+  background-image: url(../img/Icon-Basket.png);
+}
+
+.responsive::before {
+  background-image: url(../img/Icon-Laptop.png);
+}
+
+.security::before {
+  background-image: url(../img/Icon-Locked.png);
+}
+
+.name-article {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222222;
+  padding-bottom: 16px;
+}
+
+.text-article {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+/* FOOTER */
+
+.contacts {
+  position: relative;
+  background-color: #222222;
+  min-height: 676px;
+  padding-top: 106px;
+  box-sizing: border-box;
+}
+
+.contacts::after {
+  position: absolute;
+  content: "";
+  display: table;
+  height: 618px;
+  width: 100%;
+  background-image: url(../img/Map-Image.png);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: 1;
+  top: 58px;
+  background-position: right;
+}
+
+.contacts .name-section {
+  color: #ffffff;
+}
+
+.contact {
+  position: relative;
+  z-index: 2;
+}
+
+.wrap-flex {
+  display: flex;
+  height: 210px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.form-item-left,
+.form-item-right,
+.button-submit {
+  width: 455px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbbbbb;
+  border-radius: 3px;
+  border: none;
+}
+
+.form-item-left::placeholder, 
+.form-item-right::placeholder {
+  color: #bbbbbb;
+}
+
+.form-item-left {
+  height: 52px;
+}
+
+.form-item-right {
+  height: 210px;
+  resize: none;
+}
+
+.form-item-left:valid,
+.form-item-right:valid {
+  outline-color: rgb(0, 255, 0);
+}
+
+.form-item-left:invalid,
+.form-item-right:invalid {
+  outline-color: rgb(255, 0, 0);
+}
+
+.button-submit {
+  display: block;
+  margin: 30px auto;
+  width: 240px;
+  height: 66px;
+  color: #fff;
+  background-color: #fed136;
+  border: none;
+  border-radius: 3px;
+  font-size: 18px;
+}
