@@ -1,0 +1,66 @@
+@media (min-width: 768px) {
+    .head-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+    .head {
+        height: 700px;
+    }
+    .head-wrap {
+        width: 660px;
+    }
+    .menu {
+        padding-bottom: 0;
+    }
+    .logo {
+        padding-bottom: 0;
+    }
+    .head-name {
+        font-size: 52px;
+        line-height: 65px;
+        padding: 0 50px 50px;
+    }
+    .head-name-description {
+        padding-top: 34px;
+        font-size: 24px;
+    }
+    .team {
+        width: 492px;
+        padding: 0;
+    }
+    .team-name {
+        margin-bottom: 34px;
+    }
+    .wrap-article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .team-partner {
+        width: 236px;
+    }
+    .partner-about {
+        padding: 0;
+    }
+    .wrap-article {
+        padding-bottom: 34px;
+    }
+}
+
+@media (min-width: 940px) {
+    .head-wrap {
+        width: 940px;
+    }
+    .head-name {
+        padding: 0 200px 50px;
+    }
+    .team {
+        width: 940px;
+    }
+    .team-partner {
+        width: 220px;
+    }
+}
