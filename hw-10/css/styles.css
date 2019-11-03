@@ -75,7 +75,7 @@
 }
 
 .head__logo--link,
-.head__menu--link {
+.head__link {
   text-decoration: none;
   color: #fff;
   -webkit-transition: color 0.2s linear;
@@ -98,17 +98,17 @@
   list-style: none;
 }
 
-.head__menu--link:hover,
+.head__link:hover,
 .head__menu--svg:hover .head__menu--svg_path {
   color: #fce38a;
   fill: #fce38a;
 }
 
-.head__menu--item {
+.head__item {
   position: relative;
 }
 
-.head__menu--item::after {
+.head__item::after {
   position: absolute;
   content: "";
   bottom: -10px;
@@ -125,11 +125,11 @@
   transition: opacity 0.2s;
 }
 
-.head__menu--item:hover::after {
+.head__item:hover::after {
   opacity: 1;
 }
 
-.page-title {
+.head__page-title {
   display: block;
   margin: 0 auto 120px;
   text-align: center;
@@ -142,7 +142,7 @@
   max-width: 840px;
 }
 
-.page-title--script {
+.head__page-title--script {
   display: block;
   font-family: "Kaushan Script", cursive;
   font-size: 72px;
@@ -150,7 +150,7 @@
   text-transform: none;
 }
 
-.button {
+.head__button {
   display: block;
   margin: 0 auto;
   width: 160px;
@@ -432,7 +432,7 @@
   cursor: pointer;
 }
 
-.team-member__icon--link {
+.team-member__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,7 +444,7 @@
   transition: background-color 0.2s linear;
 }
 
-.team-member__icon--link:hover {
+.team-member__link:hover {
   background-color: #f38181;
 }
 
@@ -452,7 +452,7 @@
   margin: auto;
 }
 
-.team-member__icon--link:hover .team-member__icon--svg-path {
+.team-member__link:hover .team-member__icon--svg-path {
   fill: #fff;
   -webkit-transition: fill 0.2s linear;
   -o-transition: fill 0.2s linear;
