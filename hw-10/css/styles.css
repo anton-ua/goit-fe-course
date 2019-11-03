@@ -162,6 +162,7 @@
   color: #fff;
   background: none;
   border: 4px solid #fff;
+  cursor: pointer;
 }
 
 .section-main--description,
@@ -428,6 +429,7 @@
 
 .team-member__icon {
   margin-right: 1px;
+  cursor: pointer;
 }
 
 .team-member__icon--link {
